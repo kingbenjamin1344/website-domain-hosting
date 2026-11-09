@@ -1,0 +1,192 @@
+
+/* ========================================
+   GH MAX CORPORATION
+   GLOBAL CSS FOUNDATION
+======================================== */
+
+
+/* 1. IMPORT OTHER STYLESHEETS */
+
+@import url("./layout.css");
+@import url("./components.css");
+@import url("./responsive.css");
+
+
+/* 2. FONT IMPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+/* 3. CSS VARIABLES */
+
+:root {
+
+    /* Brand Colors */
+    --color-primary: #f9fafc;
+    --color-accent: #725c05;
+
+    /* Background Colors */
+    --color-background: #022d74;
+    --color-background-light: #022d74;
+    --color-background-gray: #1a1b1d;
+
+    /* Text Colors */
+    --color-text: #ffffff;
+    --color-text-light: #95aabb;
+
+    /* Border */
+    --color-border: #D9DEE5;
+
+    /* Typography */
+    --font-primary: "Inter", sans-serif;
+
+    --font-size-small: 14px;
+    --font-size-body: 16px;
+
+    --font-size-h1: 48px;
+    --font-size-h2: 36px;
+    --font-size-h3: 24px;
+
+    /* Layout */
+    --container-width: 1200px;
+
+    --padding-desktop: 48px;
+    --padding-tablet: 32px;
+    --padding-mobile: 20px;
+
+    /* Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    --space-6: 48px;
+    --space-7: 64px;
+    --space-8: 96px;
+
+    /* Borders */
+    --radius-small: 6px;
+    --radius-medium: 10px;
+    --radius-large: 16px;
+
+}
+
+
+/* 4. GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 5. HTML DEFAULTS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--font-primary);
+
+    font-size: var(--font-size-body);
+
+    line-height: 1.6;
+
+    color: var(--color-text);
+
+    background-color: var(--color-background);
+
+}
+
+
+/* 6. IMAGE DEFAULTS */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+/* 7. LINK DEFAULTS */
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+/* 8. LIST DEFAULTS */
+
+ul,
+ol {
+
+    list-style: none;
+
+}
+
+
+/* 9. HEADING DEFAULTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--color-primary);
+
+    line-height: 1.2;
+
+}
+
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 800;
+}
+
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+}
+
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+}
+
+
+/* 10. PARAGRAPH DEFAULTS */
+
+p {
+
+    color: var(--color-text-light);
+
+}
+
+
+/* 11. FORM ELEMENT DEFAULTS */
+
+button,
+input,
+textarea,
+select {
+
+    font: inherit;
+
+}

@@ -1,0 +1,424 @@
+
+/* ========================================
+   GH MAX CORPORATION
+   LAYOUT STYLES
+======================================== */
+
+
+/* 1. GLOBAL CONTAINER */
+
+.container {
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: var(--padding-desktop);
+    padding-right: var(--padding-desktop);
+
+}
+
+
+/* 2. WEBSITE HEADER */
+
+.site-header {
+
+    width: 100%;
+
+    background-color: var(--color-background);
+
+    border-bottom: 1px solid var(--color-border);
+
+    position: relative;
+
+    z-index: 100;
+
+}
+
+
+/* 3. NAVIGATION */
+
+.navbar {
+
+    max-width: var(--container-width);
+
+    min-height: 76px;
+
+    margin: 0 auto;
+
+    padding: 0 var(--padding-desktop);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-5);
+
+}
+
+
+/* LOGO */
+
+.navbar-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+}
+
+
+.navbar-logo img {
+
+    width: auto;
+
+    max-width: 180px;
+
+    max-height: 54px;
+
+    object-fit: contain;
+
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-5);
+
+}
+
+
+/* 4. GENERAL PAGE CONTAINER */
+
+main {
+
+    width: 100%;
+
+}
+
+
+section {
+
+    width: 100%;
+
+}
+
+
+/* 5. PAGE HERO */
+
+.hero {
+
+    max-width: var(--container-width);
+
+    min-height: 560px;
+
+    margin: 0 auto;
+
+    padding: var(--space-8) var(--padding-desktop);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: var(--space-7);
+
+}
+
+
+.hero-content {
+
+    max-width: 560px;
+
+}
+
+
+.hero-image {
+
+    width: 100%;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-large);
+
+}
+
+
+/* 6. GENERAL PAGE INTRODUCTION */
+
+.page-hero {
+
+    padding: var(--space-8) var(--padding-desktop);
+
+    background-color: var(--color-background-light);
+
+    text-align: center;
+
+}
+
+
+.page-hero h1 {
+
+    max-width: 850px;
+
+    margin: 0 auto var(--space-3);
+
+}
+
+
+.page-hero p {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+}
+
+
+/* 7. COMPANY INTRODUCTION */
+
+.company-intro {
+
+    padding: var(--space-8) var(--padding-desktop);
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.intro-content {
+
+    max-width: 800px;
+
+}
+
+
+/* 8. SECTION HEADINGS */
+
+.section-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto var(--space-6);
+
+    text-align: center;
+
+}
+
+
+/* 9. GENERAL CONTENT SECTIONS */
+
+.what-we-offer,
+.testimonials,
+.product-categories,
+.contact-section,
+.core-values,
+.about-overview,
+.about-history,
+.who-we-serve,
+.about-offerings,
+.mission-vision {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: var(--space-8) var(--padding-desktop);
+
+}
+
+
+/* 10. GRID LAYOUTS */
+
+.offer-grid,
+.testimonial-grid,
+.product-grid,
+.contact-grid,
+.values-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-5);
+
+}
+
+
+/* TWO-COLUMN SECTIONS */
+
+.mission-vision,
+.who-we-serve {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-5);
+
+}
+
+
+/* 11. CTA SECTION */
+
+.home-cta {
+
+    width: 100%;
+
+    padding: var(--space-8) var(--padding-desktop);
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.cta-content {
+
+    max-width: 750px;
+
+}
+
+
+/* 12. PRODUCT INQUIRY */
+
+.product-inquiry {
+
+    padding: var(--space-7) var(--padding-desktop);
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.inquiry-content {
+
+    max-width: 700px;
+
+}
+
+
+/* 13. CONTACT LOCATION */
+
+.contact-location {
+
+    padding: var(--space-7) var(--padding-desktop);
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.location-content {
+
+    max-width: 700px;
+
+}
+
+
+/* 14. WEBSITE FOOTER */
+
+.site-footer {
+
+    width: 100%;
+
+    padding: var(--space-7) var(--padding-desktop);
+
+}
+
+
+.footer-container {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+
+    gap: var(--space-6);
+
+}
+
+
+.footer-logo img {
+
+    width: auto;
+
+    max-width: 170px;
+
+    max-height: 55px;
+
+    object-fit: contain;
+
+}
+
+
+.footer-bottom {
+
+    max-width: var(--container-width);
+
+    margin: var(--space-6) auto 0;
+
+    padding-top: var(--space-4);
+
+    text-align: center;
+
+}
+
+/* Navbar scroll behavior */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+/* Accessibility: respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}

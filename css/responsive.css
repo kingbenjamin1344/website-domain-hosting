@@ -1,0 +1,443 @@
+
+/* ========================================
+   GH MAX CORPORATION
+   RESPONSIVE STYLES
+======================================== */
+
+
+/* ========================================
+   TABLET
+   768px - 1023px
+======================================== */
+
+@media (max-width: 1023px) {
+
+    /* Global Container */
+
+    .container {
+
+        padding-left: var(--padding-tablet);
+        padding-right: var(--padding-tablet);
+
+    }
+
+
+    /* Navigation */
+
+    .navbar {
+
+        padding-left: var(--padding-tablet);
+        padding-right: var(--padding-tablet);
+
+        gap: var(--space-3);
+
+    }
+
+
+    .nav-links {
+
+        gap: var(--space-3);
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        min-height: auto;
+
+        padding: var(--space-7) var(--padding-tablet);
+
+        gap: var(--space-5);
+
+    }
+
+
+    .hero-image img {
+
+        height: 350px;
+
+    }
+
+
+    /* Typography */
+
+    h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    /* Grid Layouts */
+
+    .offer-grid,
+    .testimonial-grid,
+    .product-grid,
+    .contact-grid,
+    .values-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+
+    /* Footer */
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: var(--space-6);
+
+    }
+
+
+    /* Section Spacing */
+
+    .what-we-offer,
+    .testimonials,
+    .product-categories,
+    .contact-section,
+    .core-values,
+    .about-overview,
+    .about-history,
+    .who-we-serve,
+    .about-offerings,
+    .mission-vision {
+
+        padding: var(--space-7) var(--padding-tablet);
+
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   BELOW 768px
+======================================== */
+
+@media (max-width: 767px) {
+
+    /* Global Container */
+
+    .container {
+
+        padding-left: var(--padding-mobile);
+        padding-right: var(--padding-mobile);
+
+    }
+
+
+    /* Navigation */
+
+    .navbar {
+
+        min-height: 64px;
+
+        padding: var(--space-3) var(--padding-mobile);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: var(--space-3);
+
+    }
+
+
+    .navbar-logo img {
+
+        max-height: 44px;
+
+    }
+
+
+    .nav-links {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: var(--space-2) var(--space-4);
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 14px;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        padding: var(--space-7) var(--padding-mobile);
+
+        gap: var(--space-5);
+
+    }
+
+
+    .hero-content {
+
+        max-width: 100%;
+
+    }
+
+
+    .hero-image img {
+
+        height: 280px;
+
+    }
+
+
+    /* Typography */
+
+    h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    h3 {
+
+        font-size: 22px;
+
+    }
+
+
+    body {
+
+        font-size: 16px;
+
+    }
+
+
+    /* Page Hero */
+
+    .page-hero {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    /* Company Introduction */
+
+    .company-intro {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    /* General Sections */
+
+    .what-we-offer,
+    .testimonials,
+    .product-categories,
+    .contact-section,
+    .core-values,
+    .about-overview,
+    .about-history,
+    .who-we-serve,
+    .about-offerings,
+    .mission-vision {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    /* Grid Layouts */
+
+    .offer-grid,
+    .testimonial-grid,
+    .product-grid,
+    .contact-grid,
+    .values-grid,
+    .mission-vision,
+    .who-we-serve {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* Buttons */
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .hero-actions .btn,
+    .home-cta .btn {
+
+        width: 100%;
+
+    }
+
+
+    /* CTA */
+
+    .home-cta {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    /* Product Inquiry and Location */
+
+    .product-inquiry,
+    .contact-location {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    /* About Offerings */
+
+    .about-offerings ul {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+
+        padding: var(--space-7) var(--padding-mobile);
+
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: var(--space-5);
+
+    }
+
+
+    .footer-company p {
+
+        max-width: 100%;
+
+    }
+
+
+    .footer-bottom {
+
+        margin-top: var(--space-5);
+
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   BELOW 380px
+======================================== */
+
+@media (max-width: 379px) {
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .nav-links {
+
+        gap: var(--space-2) var(--space-3);
+
+    }
+
+
+    .hero-image img {
+
+        height: 220px;
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        transition-duration: 0.01ms !important;
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+    }
+
+}

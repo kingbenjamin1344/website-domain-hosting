@@ -1,0 +1,585 @@
+
+/* ========================================
+   GH MAX CORPORATION
+   COMPONENT STYLES
+======================================== */
+
+
+/* 1. NAVIGATION LINKS */
+
+.nav-links a {
+
+    color: var(--color-primary);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+
+}
+
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+
+    color: #A67F00;
+
+}
+
+
+/* 2. BUTTONS */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border: 2px solid transparent;
+
+    border-radius: var(--radius-small);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.btn-primary {
+
+    background-color: var(--color-accent);
+
+    color: var(--color-primary);
+
+}
+
+
+.btn-primary:hover {
+
+    background-color: #E0B300;
+
+}
+
+
+.btn-secondary {
+
+    background-color: var(--color-background);
+
+    color: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+}
+
+
+.btn-secondary:hover {
+
+    background-color: var(--color-primary);
+
+    color: var(--color-background);
+
+}
+
+
+/* 3. HERO ACTIONS */
+
+.hero-actions {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: var(--space-3);
+
+    margin-top: var(--space-5);
+
+}
+
+
+/* 4. TEXT LINKS */
+
+.text-link {
+
+    display: inline-block;
+
+    margin-top: var(--space-4);
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+}
+
+
+.text-link:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* 5. PRODUCT AND OFFER CARDS */
+
+.offer-card,
+.product-card {
+
+    overflow: hidden;
+
+    background-color: var(--color-background);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-medium);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.offer-card:hover,
+.product-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 24px rgba(18, 59, 99, 0.10);
+
+}
+
+
+.offer-card img,
+.product-card img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+}
+
+
+.offer-card h3,
+.product-card h3 {
+
+    margin: var(--space-4) var(--space-4) var(--space-2);
+
+}
+
+
+.offer-card p,
+.product-card p {
+
+    margin: 0 var(--space-4) var(--space-4);
+
+}
+
+
+.offer-card a {
+
+    display: inline-block;
+
+    margin: 0 var(--space-4) var(--space-4);
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+}
+
+
+.offer-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* 6. TESTIMONIAL CARDS */
+
+.testimonial-card {
+
+    padding: var(--space-5);
+
+    background-color: var(--color-background-gray);
+
+    border-radius: var(--radius-medium);
+
+}
+
+
+.review-rating {
+
+    margin-bottom: var(--space-3);
+
+    color: #D99B00;
+
+    letter-spacing: 2px;
+
+}
+
+
+.testimonial-card blockquote {
+
+    margin-bottom: var(--space-4);
+
+    color: var(--color-text);
+
+    line-height: 1.7;
+
+}
+
+
+.customer-name {
+
+    font-size: var(--font-size-small);
+
+    font-weight: 600;
+
+}
+
+
+.testimonial-source {
+
+    margin-top: var(--space-4);
+
+    text-align: center;
+
+    font-size: var(--font-size-small);
+
+}
+
+
+/* 7. CONTACT CARDS */
+
+.contact-card {
+
+    padding: var(--space-5);
+
+    background-color: var(--color-background-light);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-medium);
+
+}
+
+
+.contact-card h3 {
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+.contact-card p {
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+.contact-card a {
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.contact-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.contact-card address {
+
+    color: var(--color-text-light);
+
+    font-style: normal;
+
+    line-height: 1.7;
+
+}
+
+
+/* 8. MISSION AND VISION CARDS */
+
+.mission-card,
+.vision-card {
+
+    padding: var(--space-6);
+
+    background-color: var(--color-background-light);
+
+    border-radius: var(--radius-large);
+
+}
+
+
+.mission-card h2,
+.vision-card h2 {
+
+    margin-bottom: var(--space-4);
+
+}
+
+
+/* 9. CORE VALUES CARDS */
+
+.value-card {
+
+    padding: var(--space-5);
+
+    background-color: var(--color-background-light);
+
+    border-top: 5px solid var(--color-primary);
+
+    border-radius: var(--radius-medium);
+
+}
+
+
+.value-card h3 {
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+/* Individual Value Colors */
+
+.value-quality {
+    border-top-color: #E58A32;
+}
+
+.value-care {
+    border-top-color: #E58BAA;
+}
+
+.value-integrity {
+    border-top-color: #8064B5;
+}
+
+.value-objectivity {
+    border-top-color: #3478B9;
+}
+
+.value-new-idea {
+    border-top-color: #36AFA3;
+}
+
+.value-hard-work {
+    border-top-color: #75B9D9;
+}
+
+
+/* 10. VALUES STATEMENT */
+
+.values-statement {
+
+    padding: var(--space-6);
+
+    background-color: var(--color-background-light);
+
+    text-align: center;
+
+}
+
+
+.values-statement h2 {
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+/* 11. ABOUT PAGE CONTENT */
+
+.about-overview p,
+.about-history p {
+
+    max-width: 850px;
+
+}
+
+
+.about-offerings ul {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-3);
+
+    margin-top: var(--space-4);
+
+}
+
+
+.about-offerings li {
+
+    padding: var(--space-3);
+
+    background-color: var( --color-background-gray);
+
+    border-radius: var(--radius-small);
+
+}
+
+
+/* 12. CTA COMPONENT */
+
+.home-cta {
+
+    background-color: var(--color-primary);
+
+}
+
+
+.home-cta h2,
+.home-cta p {
+
+    color: var(--color-background);
+
+}
+
+
+.home-cta h2 {
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+.home-cta p {
+
+    margin-bottom: var(--space-5);
+
+}
+
+
+/* 13. FOOTER COMPONENTS */
+
+.site-footer {
+
+    background-color: var(--color-primary);
+
+}
+
+
+.site-footer h3,
+.site-footer p,
+.site-footer address {
+
+    color: var(--color-background);
+
+}
+
+
+.site-footer h3 {
+
+    margin-bottom: var(--space-4);
+
+    font-size: 18px;
+
+}
+
+
+.footer-company p {
+
+    max-width: 260px;
+
+    margin-top: var(--space-3);
+
+}
+
+
+.footer-links li {
+
+    margin-bottom: var(--space-2);
+
+}
+
+
+.footer-links a,
+.footer-contact a {
+
+    color: var(--color-background);
+
+    font-size: var(--font-size-small);
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.footer-links a:hover,
+.footer-contact a:hover {
+
+    color: var(--color-accent);
+
+    text-decoration: underline;
+
+}
+
+
+.footer-contact p,
+.footer-contact address {
+
+    margin-bottom: var(--space-3);
+
+    font-size: var(--font-size-small);
+
+    line-height: 1.7;
+
+}
+
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+
+.footer-bottom p {
+
+    color: var(--color-background);
+
+    font-size: var(--font-size-small);
+
+}
+
+
+/* 14. ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible {
+
+    outline: 3px solid var(--color-accent);
+
+    outline-offset: 4px;
+
+}
