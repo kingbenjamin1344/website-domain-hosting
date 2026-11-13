@@ -83,7 +83,8 @@
     .testimonial-grid,
     .product-grid,
     .contact-grid,
-    .values-grid {
+    .values-grid,
+    .serve-grid {
 
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
@@ -112,9 +113,10 @@
     .about-history,
     .who-we-serve,
     .about-offerings,
-    .mission-vision {
+    .mission-vision,
+    .mission-support {
 
-        padding: var(--space-7) var(--padding-tablet);
+        padding: var(--space-6) var(--padding-tablet);
 
     }
 
@@ -268,7 +270,8 @@
     .about-history,
     .who-we-serve,
     .about-offerings,
-    .mission-vision {
+    .mission-vision,
+    .mission-support {
 
         padding: var(--space-7) var(--padding-mobile);
 
@@ -283,7 +286,7 @@
     .contact-grid,
     .values-grid,
     .mission-vision,
-    .who-we-serve {
+    .serve-grid {
 
         grid-template-columns: 1fr;
 
@@ -313,7 +316,7 @@
 
     .home-cta {
 
-        padding: var(--space-7) var(--padding-mobile);
+        padding: var(--space-6) var(--padding-mobile);
 
     }
 
@@ -341,7 +344,7 @@
 
     .site-footer {
 
-        padding: var(--space-7) var(--padding-mobile);
+        padding: var(--space-6) var(--padding-mobile);
 
     }
 

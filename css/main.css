@@ -22,20 +22,21 @@
 :root {
 
     /* Brand Colors */
-    --color-primary: #f9fafc;
-    --color-accent: #725c05;
+    --color-primary: #f8fafc;
+    --color-accent: #d6b13b;
 
     /* Background Colors */
-    --color-background: #022d74;
-    --color-background-light: #022d74;
-    --color-background-gray: #1a1b1d;
+    --color-background: #062f73;
+    --color-background-light: #0a3b82;
+    --color-background-gray: #082653;
+    --color-surface: #0b3b7d;
 
     /* Text Colors */
     --color-text: #ffffff;
-    --color-text-light: #95aabb;
+    --color-text-light: #c1cee0;
 
     /* Border */
-    --color-border: #D9DEE5;
+    --color-border: rgba(222, 233, 248, 0.16);
 
     /* Typography */
     --font-primary: "Inter", sans-serif;
@@ -62,7 +63,7 @@
     --space-5: 32px;
     --space-6: 48px;
     --space-7: 64px;
-    --space-8: 96px;
+    --space-8: 80px;
 
     /* Borders */
     --radius-small: 6px;
@@ -154,20 +155,25 @@ h6 {
 
 
 h1 {
-    font-size: var(--font-size-h1);
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
     font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
 }
 
 
 h2 {
-    font-size: var(--font-size-h2);
+    font-size: clamp(1.75rem, 3.2vw, 2.5rem);
     font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
 }
 
 
 h3 {
-    font-size: var(--font-size-h3);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: 600;
+    line-height: 1.3;
 }
 
 
@@ -177,6 +183,11 @@ p {
 
     color: var(--color-text-light);
 
+}
+
+::selection {
+    color: var(--color-background);
+    background: var(--color-accent);
 }
 
 

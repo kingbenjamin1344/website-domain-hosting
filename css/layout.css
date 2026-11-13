@@ -27,13 +27,17 @@
 
     width: 100%;
 
-    background-color: var(--color-background);
+    background-color: rgba(6, 47, 115, 0.97);
 
     border-bottom: 1px solid var(--color-border);
 
     position: relative;
 
     z-index: 100;
+
+    box-shadow: 0 8px 24px rgba(0, 15, 44, 0.12);
+
+    backdrop-filter: blur(12px);
 
 }
 
@@ -163,6 +167,10 @@ section {
 
     border-radius: var(--radius-large);
 
+    border: 1px solid var(--color-border);
+
+    box-shadow: 0 24px 56px rgba(0, 15, 44, 0.3);
+
 }
 
 
@@ -170,9 +178,13 @@ section {
 
 .page-hero {
 
-    padding: var(--space-8) var(--padding-desktop);
+    padding: clamp(64px, 8vw, 104px) var(--padding-desktop);
 
-    background-color: var(--color-background-light);
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(35, 101, 178, 0.42), transparent 68%),
+        var(--color-background);
+
+    border-bottom: 1px solid var(--color-border);
 
     text-align: center;
 
@@ -194,6 +206,10 @@ section {
 
     margin: 0 auto;
 
+    font-size: 1.08rem;
+
+    line-height: 1.75;
+
 }
 
 
@@ -202,6 +218,12 @@ section {
 .company-intro {
 
     padding: var(--space-8) var(--padding-desktop);
+
+    background: linear-gradient(180deg, var(--color-background-light), var(--color-background));
+
+    border-top: 1px solid var(--color-border);
+
+    border-bottom: 1px solid var(--color-border);
 
     display: flex;
 
@@ -223,11 +245,29 @@ section {
 
 .section-heading {
 
-    max-width: 750px;
+    max-width: 760px;
 
-    margin: 0 auto var(--space-6);
+    margin: 0 auto var(--space-5);
 
     text-align: center;
+
+}
+
+
+.section-heading h2 {
+
+    margin-bottom: var(--space-2);
+
+}
+
+
+.section-heading p {
+
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    line-height: 1.75;
 
 }
 
@@ -243,7 +283,8 @@ section {
 .about-history,
 .who-we-serve,
 .about-offerings,
-.mission-vision {
+.mission-vision,
+.mission-support {
 
     max-width: var(--container-width);
 
@@ -273,14 +314,24 @@ section {
 
 /* TWO-COLUMN SECTIONS */
 
-.mission-vision,
-.who-we-serve {
+.mission-vision {
 
     display: grid;
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: var(--space-5);
+
+}
+
+
+.serve-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-4);
 
 }
 
@@ -302,6 +353,15 @@ section {
 }
 
 
+.values-statement {
+
+    max-width: var(--container-width);
+
+    margin: var(--space-4) auto var(--space-7);
+
+}
+
+
 .cta-content {
 
     max-width: 750px;
@@ -313,6 +373,10 @@ section {
 
 .product-inquiry {
 
+    max-width: var(--container-width);
+
+    margin: 0 auto var(--space-6);
+
     padding: var(--space-7) var(--padding-desktop);
 
     display: flex;
@@ -320,6 +384,14 @@ section {
     justify-content: center;
 
     text-align: center;
+
+    background: linear-gradient(145deg, var(--color-background-light), var(--color-background-gray));
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 20px;
+
+    box-shadow: 0 16px 36px rgba(0, 15, 44, 0.18);
 
 }
 
@@ -334,6 +406,10 @@ section {
 /* 13. CONTACT LOCATION */
 
 .contact-location {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
 
     padding: var(--space-7) var(--padding-desktop);
 
@@ -375,6 +451,8 @@ section {
     grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
 
     gap: var(--space-6);
+
+    align-items: start;
 
 }
 
@@ -430,11 +508,11 @@ section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   align-items: center;
-  gap: 48px;
+  gap: clamp(32px, 5vw, 64px);
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 48px;
+  padding: var(--space-8) var(--padding-desktop);
 }
 
 .location-content h2 {
@@ -455,9 +533,10 @@ section {
   width: 100%;
   height: 360px;
   overflow: hidden;
-  border: 4px solid var(--color-accent);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
   box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 15, 44, 0.26);
 }
 
 .location-map-preview a {
@@ -479,8 +558,8 @@ section {
 @media (max-width: 767px) {
   .about-location {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 48px 20px;
+    gap: var(--space-5);
+    padding: var(--space-7) var(--padding-mobile);
   }
 
   .location-map-preview {
