@@ -1,0 +1,53 @@
+{
+  "pages": [
+    {
+      "source": "index.html",
+      "output": "dist/index.html",
+      "active": "home",
+      "footer": "site"
+    },
+    {
+      "source": "pages/about.html",
+      "output": "dist/pages/about.html",
+      "active": "about",
+      "footer": "site",
+      "product_names": true
+    },
+    {
+      "source": "pages/products.html",
+      "output": "dist/pages/products.html",
+      "active": "products",
+      "footer": "site"
+    },
+    {
+      "source": "pages/contact.html",
+      "output": "dist/pages/contact.html",
+      "active": "contact",
+      "footer": "site"
+    },
+    {
+      "source": "pages/mission-vision.html",
+      "output": "dist/pages/mission-vision.html",
+      "active": "mission",
+      "footer": "site"
+    },
+    {
+      "source": "pages/values.html",
+      "output": "dist/pages/values.html",
+      "active": null,
+      "footer": "site"
+    },
+    {
+      "source": "pages/privacy-policy.html",
+      "output": "dist/pages/privacy-policy.html",
+      "active": null,
+      "footer": "legal"
+    },
+    {
+      "source": "pages/terms.html",
+      "output": "dist/pages/terms.html",
+      "active": null,
+      "footer": "legal"
+    }
+  ]
+}

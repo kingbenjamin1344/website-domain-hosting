@@ -1,0 +1,66 @@
+[
+  {
+    "name": "School Supplies",
+    "image": "school-supplies.jpg",
+    "alt": "School supplies",
+    "home_description": "Essential supplies for students, teachers, and schools.",
+    "description": "Essential supplies for students, teachers, and educational institutions.",
+    "featured": true
+  },
+  {
+    "name": "Office Supplies",
+    "image": "office-supplies.jpg",
+    "alt": "Office supplies",
+    "home_description": "Everyday essentials for productive workplaces.",
+    "description": "Everyday essentials for offices, workplaces, and businesses.",
+    "featured": true
+  },
+  {
+    "name": "Furniture",
+    "image": "furniture.jpg",
+    "alt": "Office furniture",
+    "home_description": "Furniture solutions for offices and workspaces.",
+    "description": "Furniture solutions for offices, schools, and workspaces.",
+    "featured": true
+  },
+  {
+    "name": "Equipment & Machinery",
+    "image": "equipment.jpg",
+    "alt": "Equipment and machinery",
+    "home_description": "Equipment to support business and office operations.",
+    "description": "Equipment and machinery to support business and office operations.",
+    "featured": true
+  },
+  {
+    "name": "Cleaning Supplies",
+    "image": "cleaning-supplies.jpg",
+    "alt": "Cleaning supplies",
+    "home_description": "",
+    "description": "Essential cleaning products for maintaining clean and organized spaces.",
+    "featured": false
+  },
+  {
+    "name": "Electronics",
+    "image": "electronics.jpg",
+    "alt": "Electronic products",
+    "home_description": "",
+    "description": "Electronic products and accessories for everyday work and business needs.",
+    "featured": false
+  },
+  {
+    "name": "Toys",
+    "image": "toys.jpg",
+    "alt": "Toys and educational play products",
+    "home_description": "",
+    "description": "Toys and educational products for learning, creativity, and play.",
+    "featured": false
+  },
+  {
+    "name": "Housewares",
+    "image": "housewares.jpg",
+    "alt": "Housewares and household essentials",
+    "home_description": "",
+    "description": "Practical household products for everyday use.",
+    "featured": false
+  }
+]

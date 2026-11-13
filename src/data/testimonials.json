@@ -1,0 +1,26 @@
+[
+  {
+    "rating": 5,
+    "stars": "★★★★★",
+    "quote": "\"Highly recommended. GH is well known for office supply and school supply.\"",
+    "customer": "Customer initials"
+  },
+  {
+    "rating": 5,
+    "stars": "★★★★★",
+    "quote": "\"I have been buying school supplies and office stuffs here for 7 years... They have the lowest prices I think.\"",
+    "customer": "Customer initials"
+  },
+  {
+    "rating": 5,
+    "stars": "★★★★★",
+    "quote": "\"Great place to buy school and office supplies.\"",
+    "customer": "Customer initials"
+  },
+  {
+    "rating": 3,
+    "stars": "★★★☆☆",
+    "quote": "\"It is accessible to everybody with so many school and office supply to choose from.\"",
+    "customer": "Customer initials"
+  }
+]
